@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📚 笔记导览</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #3498db;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 8px;
+    }
+    .pdf-list {
+      list-style: none;
+      padding: 0;
+    }
+    .pdf-list li {
+      margin: 12px 0;
+    }
+    .pdf-list a {
+      text-decoration: none;
+      color: #2980b9;
+      font-size: 1.1em;
+      display: block;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .pdf-list a:hover {
+      background-color: #f0f8ff;
+      border-color: #2980b9;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .section {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 笔记导览</h1>
+      <p>点击下方链接查看并下载 PDF 笔记</p>
+    </header>
+
+
+    <div class="section">
+      <h2>📐 凝聚态化学动力学</h2>
+      <ul class="pdf-list">
+        <li><a href="pdfs/condesedchemistry/chapter14Total.pdf" target="_blank">第十四章</a></li>
+        <li><a href="pdfs/condesedchemistry/chapter15Total.pdf" target="_blank">第十五章</a></li>
+        <li><a href="pdfs/condesedchemistry/probability.pdf" target="_blank">第十六章——待更新</a></li>
+      </ul>
+    </div>
+
+
+    <div class="section">
+      <h2>💻 中级量子力学</h2>
+      <ul class="pdf-list">
+        <li><a href="pdfs/middlequantuamphysics/NewFull1-16.pdf" target="_blank">总览</a></li>
+        <li><a href="pdfs/middlequantuamphysics/web_dev.pdf" target="_blank">第一章待更新</a></li>
+        <li><a href="pdfs/middlequantuamphysics/algorithms.pdf" target="_blank">第二章待更新</a></li>
+      </ul>
+    </div>
+
+    <!-- 机器学习 -->
+    <div class="section">
+      <h2>🧠 机器学习</h2>
+      <ul class="pdf-list">
+        <li><a href="pdfs/solidphysics/固体物理笔记编译版.pdf" target="_blank">总览</a></li>
+        <li><a href="pdfs/ml/deep_learning.pdf" target="_blank">深度学习笔记</a></li>
+      </ul>
+    </div>
+
+    <!-- 其他 -->
+    <div class="section">
+      <h2>📖 其他</h2>
+      <ul class="pdf-list">
+        <li><a href="pdfs/others/git_guide.pdf" target="_blank">Git 使用指南</a></li>
+        <li><a href="pdfs/others/latex_guide.pdf" target="_blank">LaTeX 排版入门</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      &copy; 2025 学习注记 | 托管于 GitHub
+    </footer>
+  </div>
+</body>
+</html>
