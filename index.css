@@ -1,0 +1,39 @@
+.pdf-list.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5列，等宽 */
+  grid-template-rows: repeat(3, auto);   /* 3行 */
+  gap: 12px;                             /* 间距 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pdf-list.grid-layout li {
+  margin: 0;
+}
+
+.pdf-list.grid-layout a {
+  text-decoration: none;
+  color: #2980b9;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.pdf-list.grid-layout a:hover {
+  background-color: #f0f8ff;
+  border-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .pdf-list.grid-layout {
+    grid-template-columns: repeat(3, 1fr); /* 小屏幕改为3列 */
+  }
+}
